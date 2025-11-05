@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My E-Commerce Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>🛍️ Welcome to My Store</h1>
+    <a class="cart-link" href="carts.html">🛒 Cart (<span id="cart-count">0</span>)</a>
+  </header>
+
+  <section class="filters" style="padding: 12px; display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+    <input id="search-input" type="text" placeholder="Search products..." style="flex:1; min-width: 220px; padding: 8px 10px;">
+    <select id="category-filter" style="padding: 8px 10px;">
+      <option value="all">All Categories</option>
+      <option value="men's clothing">Men's clothing</option>
+      <option value="women's clothing">Women's clothing</option>
+      <option value="electronics">Electronics</option>
+      <option value="jewelery">Jewelery</option>
+    </select>
+  </section>
+
+  <main>
+    <div id="product-container" class="product-grid"></div>
+  </main>
+
+  <footer class="site-footer">© 2025 udaykiran. All Rights Reserved.</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
